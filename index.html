@@ -1,21 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <meta property="og:title" content="Olycy" />
-    <meta name="twitter:title" content="Olycy" />
-    <title>Olycy</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+  <title>Stitch Design</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="loading-overlay">
-            <div class="logo_loading" data-text="Olycy">Olycy</div>
+  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#111418]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Olycy</h2>
         </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Product</a>
+            <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Solutions</a>
+            <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Resources</a>
+            <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Pricing</a>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Get Started</span>
+            </button>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f5] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Login</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAujlXZSEdRSHwqUqSE8BAcs3sWJ-L2QCsJFCHV-SHEMFAl6_nJu48kkPG_dlkSdFHEh2RwpLokbRw8kLpzVZbGmOwqdL58TxDDweK9nrwu9U8FZSFB0h3fELeDtQrM9j2zczRWBdqDMwRhDRvew5GX_DijkpRDGgkZ9yw0v17gpB3_9b6lyzaQfbgqtTGI8VCZdMYYrdSHz6zSidVQtoW25gbyyrDtWvT4iMUnIsfwf_NRUO80e1CmI8ISQAa7JQyHo_PMzQLhp0dZ");'>
+                <div class="flex flex-col gap-2 text-left">
+                  <h1
+                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                    Streamline Your Oil &amp; Gas Order Management
+                  </h1>
+                  <h2
+                    class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                    Olycy provides a comprehensive SaaS solution for oil and gas companies to efficiently manage their
+                    orders, from placement to delivery. Reduce errors,
+                    improve communication, and optimize your operations.
+                  </h2>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                  <span class="truncate">Request a Demo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-10 px-4 py-10 @container">
+            <div class="flex flex-col gap-4">
+              <h1
+                class="text-[#111418] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                Key Features &amp; Benefits
+              </h1>
+              <p class="text-[#111418] text-base font-normal leading-normal max-w-[720px]">
+                Olycy offers a range of features designed to meet the specific needs of oil and gas companies.
+              </p>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4 flex-col">
+                <div class="text-[#111418]" data-icon="ListBullets" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#111418] text-base font-bold leading-tight">Centralized Order Management</h2>
+                  <p class="text-[#60758a] text-sm font-normal leading-normal">Manage all your orders in one place, with
+                    a clear overview of status, details, and history.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4 flex-col">
+                <div class="text-[#111418]" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#111418] text-base font-bold leading-tight">Enhanced Collaboration</h2>
+                  <p class="text-[#60758a] text-sm font-normal leading-normal">
+                    Improve communication between teams and stakeholders with integrated messaging and notifications.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4 flex-col">
+                <div class="text-[#111418]" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#111418] text-base font-bold leading-tight">Robust Security</h2>
+                  <p class="text-[#60758a] text-sm font-normal leading-normal">Ensure the security of your data with
+                    advanced encryption and access controls.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4 flex-col">
+                <div class="text-[#111418]" data-icon="Clock" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#111418] text-base font-bold leading-tight">Real-Time Tracking</h2>
+                  <p class="text-[#60758a] text-sm font-normal leading-normal">Track orders in real-time, from placement
+                    to delivery, with updates and alerts at every stage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="@container">
+            <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+              <div class="flex flex-col gap-2 text-center">
+                <h1
+                  class="text-[#111418] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                  style="text-align: center; width: 100%;">
+
+                  Ready to Transform Your Order Management?
+                </h1>
+                <p class="text-[#111418] text-base font-normal leading-normal max-w-[720px">
+                  Request a demo today and see how Olycy can help your oil and gas company achieve greater efficiency
+                  and profitability.
+                </p>
+              </div>
+              <div class="flex flex-1 justify-center">
+                <div class="flex justify-center">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+                    <span class="truncate">Get Started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Product</a>
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Solutions</a>
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Resources</a>
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Pricing</a>
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              <a class="text-[#60758a] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="#">
+                <div class="text-[#60758a]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div class="text-[#60758a]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <p class="text-[#60758a] text-base font-normal leading-normal">© 2025 Olycy. All rights reserved.</p>
+          </footer>
+        </div>
+      </footer>
     </div>
+  </div>
 </body>
 
 </html>
